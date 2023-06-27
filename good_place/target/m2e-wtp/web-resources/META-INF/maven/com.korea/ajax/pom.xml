@@ -4,6 +4,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.korea</groupId>
+	<artifactId>ajax</artifactId>
+	<name>Ex_0619</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
@@ -186,6 +188,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	<artifactId>goodplace</artifactId>
-	<name>good_place</name>
 </project>
