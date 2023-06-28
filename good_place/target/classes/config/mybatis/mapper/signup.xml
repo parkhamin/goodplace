@@ -3,29 +3,28 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="s">
-<!-- 	<select id="signup_list" resultType="signup">
-		select * from MEMBER order by idx DESC
-	</select>
-	
-	회원가입
+
+	<!-- 회원가입 -->
 	<insert id="insert_user" parameterType="signup">
-		insert into MEMBER values(
-			seq_member_idx.nextVal, 
+		insert into SIGNUP values(
+			seq_signup_idx.nextVal, 
+			#{id},
+			#{pwd},
 			#{name},
-			#{id}, 
-			#{pwd}, 
-			#{addr})
+			#{gender}, 
+			#{email}, 
+			#{birth})
 	</insert>
 	
-	아이디 중복체크
+	<!-- 아이디 중복체크 -->
 	<select id="checkid" resultType="signup" parameterType="String">
 		select * from member where id=#{id}
 	</select>
 	
-	회원삭제
+	<!-- 회원삭제 -->
 	<delete id="delMember" parameterType="int">
 		delete from MEMBER where idx=#{idx}
-	</delete> -->
+	</delete>
 </mapper>
 
 
