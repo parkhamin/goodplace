@@ -98,6 +98,22 @@
 					<td><input name="name"></td>
 				</tr>
 				
+				<tr>
+					<th>성별</th>
+					<td><input type="radio" name="gender" value="남자">남자<input type="radio" name="gender" value="여자">여자</td>
+				</tr>
+				
+				<tr>
+					<th>이메일</th>
+					<td><input name="email" type="email"></td>
+				</tr>
+				
+				<tr>
+					<th>생일</th>
+					<td><input type="date" name="birth"></td>
+				</tr>
+				
+				
 				
 		</table>
 	</form>
