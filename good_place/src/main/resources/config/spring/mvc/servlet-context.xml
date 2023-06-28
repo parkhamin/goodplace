@@ -23,13 +23,9 @@
 	
 	<context:component-scan base-package="com.korea.db" /> -->
 	
-	<!-- <beans:bean class="com.korea.vs.VisitController">
-		<beans:property name="visit_dao" ref="visit_daoBean"/>
-	</beans:bean> -->
-	
-<!-- 	<beans:bean class="com.korea.ajax.MemberController">
-		<beans:constructor-arg ref="member_daoBean"/>
-	</beans:bean> -->
+	<beans:bean class="com.korea.goodplace.SignupController">
+		<beans:constructor-arg ref="signup_daoBean"/>
+	</beans:bean> 
 	
 </beans:beans>
 
