@@ -7,7 +7,7 @@ import dao.BoardDAO;
 @Controller
 public class BoardController {
 
-	public static final String PATH = "/WEB-INF/views/";
+	public static final String PATH = "/WEB-INF/views/board/";
 	
 	BoardDAO board_dao;
 	public BoardController(BoardDAO board_dao) {
