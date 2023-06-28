@@ -15,7 +15,8 @@
 	</typeAliases>
 	
 	<mappers>
-		<mapper resource="config/mybatis/mapper/Signup.xml" />
+		<mapper resource="config/mybatis/mapper/signup.xml" />
+		<mapper resource="config/mybatis/mapper/login.xml" />
 	</mappers>
 </configuration>
 
