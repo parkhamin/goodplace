@@ -19,7 +19,7 @@
 	<!-- <beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
-	</beans:bean>
+		</beans:bean>
 	
 	<context:component-scan base-package="com.korea.db" /> -->
 	
@@ -27,10 +27,14 @@
 		<beans:constructor-arg ref="board_daoBean"/>
 	</beans:bean>
 	
-<!-- 	<beans:bean class="com.korea.ajax.MemberController">
-		<beans:constructor-arg ref="member_daoBean"/>
-	</beans:bean> -->
+	<beans:bean class="com.korea.goodplace.SignupController">
+		<beans:constructor-arg ref="signup_daoBean"/>
+	</beans:bean>
 	
+	<beans:bean class="com.korea.goodplace.LoginController">
+		<beans:constructor-arg ref="login_daoBean"/>
+	</beans:bean>   
+	 
 </beans:beans>
 
 
