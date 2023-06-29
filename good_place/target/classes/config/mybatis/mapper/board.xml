@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="b">
+
+	<!-- 게시글 추가 -->
+	<insert id="insert_board" parameterType="vo.BoardVO">
+		insert into board values (seq_board_idx.nextVal,
+							#{title},
+							#{content},
+							#{filename},
+							#{location},
+							#{pwd},
+							#{ip},
+							sysdate)
+	</insert>
+	
+	<!-- 게시글 삭제 -->
+	<delete id="delete_board" parameterType="int">
+		delete from board where idx=#{idx}
+	</delete>
+	
+	<!-- 게시글 수정 -->
+	<update id="update_board" parameterType="vo.BoardVO">
+		update board set title=#{title}, content=#{content}, filename=#{filename} where idx=#{idx} 
+	</update>
+	
+	<!-- 게시글 불러오기 -->
+	<select id="list_board" resultType="vo.BoardVO"> <!-- parameterType="vo.BoardVO" -->
+		select * from board order by idx DESC
+	</select>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

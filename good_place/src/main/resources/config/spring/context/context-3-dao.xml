@@ -8,6 +8,9 @@
 		<constructor-arg ref="sqlSessionBean" />
 	</bean>
 	
-	
+	<!-- 게시글 -->
+	<bean id="board_daoBean" class="dao.BoardDAO">
+		<constructor-arg ref="sqlSessionBean" />
+	</bean>
 
 </beans>

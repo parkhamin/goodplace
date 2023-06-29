@@ -10,12 +10,12 @@
 	
 	<typeAliases>
 		<!-- typeAlias:특정클래스를 쉽게 호출하기 위한 별칭 -->
-		<typeAlias type="vo.SignupVO" alias="signup"/>
 		<!-- <typeAlias type="vo.VisitVO" alias="visit"/> -->
 	</typeAliases>
 	
 	<mappers>
-		<mapper resource="config/mybatis/mapper/Signup.xml" />
+		<mapper resource="config/mybatis/mapper/signup.xml" />
+		<mapper resource="config/mybatis/mapper/board.xml" />
 	</mappers>
 </configuration>
 
