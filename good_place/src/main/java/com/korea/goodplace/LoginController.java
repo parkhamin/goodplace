@@ -1,5 +1,7 @@
 package com.korea.goodplace;
 
+import java.util.Set;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -15,7 +17,7 @@ public class LoginController {
 	public static final String PATH = "/WEB-INF/views/login/";
 	
 	LoginDAO login_dao;
-	public void setMember_dao(LoginDAO login_dao) {
+	public LoginController(LoginDAO login_dao) {
 		this.login_dao = login_dao;
 	}
 	
