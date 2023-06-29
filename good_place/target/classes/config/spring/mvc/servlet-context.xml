@@ -25,7 +25,11 @@
 	
 	<beans:bean class="com.korea.goodplace.SignupController">
 		<beans:constructor-arg ref="signup_daoBean"/>
-	</beans:bean> 
+	</beans:bean>
+	
+	<beans:bean class="com.korea.goodplace.LoginController">
+		<beans:constructor-arg ref="login_daoBean"/>
+	</beans:bean>  
 	
 </beans:beans>
 
