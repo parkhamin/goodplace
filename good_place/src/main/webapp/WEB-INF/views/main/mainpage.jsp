@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<jsp:include page="check_login.jsp"/>
+	<%-- <jsp:include page="check_login.jsp"/>
 	메인페이지(구성중)<br>
-	<input type="button" value="로그아웃" onclick="location.href='logout.do'">
+	<input type="button" value="로그아웃" onclick="location.href='logout.do'"> --%>
 </body>
 </html>

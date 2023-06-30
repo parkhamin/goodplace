@@ -49,9 +49,10 @@ public class LoginController {
 		return "[{'res':'clear'}]";//로그인 성공
 	}
 	
+	// 로그인 실패했을때 돌아올 경로
 	@RequestMapping("/clear.do")
 	public String clear() {
-		return PATH + "main_content.jsp";
+		return "/WEB-INF/views/main/" + "mainpage.jsp";
 	}
 	
 	//로그아웃
