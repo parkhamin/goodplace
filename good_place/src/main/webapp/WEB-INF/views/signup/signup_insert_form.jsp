@@ -113,7 +113,12 @@
 					<td><input type="date" name="birth"></td>
 				</tr>
 				
-				
+				<tr>
+				<td colspan="2" align="center">
+					<input type="button" value="가입하기" onclick="send(this.form);">
+					<input type="button" value="취소" onclick="location.href='main.do'">
+				</td>
+			</tr>
 				
 		</table>
 	</form>
