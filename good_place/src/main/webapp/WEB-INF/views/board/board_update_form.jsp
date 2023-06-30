@@ -67,7 +67,7 @@
 				<td colspan="2" align="right">
 					<input type="button" value="수정하기" onclick="send(this.form);">
 					<input type="button" value="목록으로" 
-					       onclick="location.href='list.do'">
+					       onclick="location.href='board_list.do'">
 				</td>
 			</tr>
 			

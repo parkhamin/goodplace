@@ -8,7 +8,7 @@
 <c:if test="${ empty sessionScope.user }">
 	<script>
 		alert("로그인 후 이용해주세요");
-		location.href="list.do";
+		location.href="login_list.do";
 	</script>
 </c:if>
 <!DOCTYPE html>

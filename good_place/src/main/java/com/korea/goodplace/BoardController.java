@@ -34,7 +34,7 @@ public class BoardController {
 	}
 	
 	// 게시글 불러오기
-	@RequestMapping(value={"/", "/list.do"})
+	@RequestMapping("/board_list.do")
 	public String boardlist(Model model) {
 		List<BoardVO> list = board_dao.selectlist();
 		model.addAttribute("list",list);
@@ -97,7 +97,7 @@ public class BoardController {
 		// Controller에서 url매핑을 호출해야 하는 경우
 		// sendRedirect("list.do");
 		// redirect를 나중에 게시글 jsp로 보내야함
-		return "redirect:list.do";
+		return "redirect:board_list.do";
 	}
 	
 	// 게시글 수정을 위한 페이지로 전환
@@ -116,7 +116,7 @@ public class BoardController {
 		
 		int res = board_dao.updateboard(vo);
 		
-		return "redirect:list.do";
+		return "redirect:board_list.do";
 	}
 	
 	// 게시글 삭제

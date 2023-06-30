@@ -28,7 +28,7 @@ public class SignupController {
 		public String insertUser(SignupVO vo) {
 			
 			int res = signup_dao.insertUser(vo);
-			return "redirect:list.do";
+			return "redirect:login_list.do";
 		}
 		
 		//아이디 중복체크를 위한 메서드

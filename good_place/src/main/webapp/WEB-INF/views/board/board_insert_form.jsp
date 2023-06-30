@@ -28,7 +28,7 @@
  				return;
  			}
  			
- 			f.action = "insert.do";
+ 			f.action = "board_insert.do";
  			f.submit();//전송
  		}
  	</script>
@@ -69,7 +69,7 @@
 				<td colspan="2" align="right">
 					<input type="button" value="글쓰기" onclick="send(this.form);">
 					<input type="button" value="목록으로" 
-					       onclick="location.href='list.do'">
+					       onclick="location.href='board_list.do'">
 				</td>
 			</tr>
 			

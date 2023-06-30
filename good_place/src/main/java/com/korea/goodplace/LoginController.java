@@ -21,7 +21,7 @@ public class LoginController {
 		this.login_dao = login_dao;
 	}
 	
-	@RequestMapping(value= {"/", "/list.do"})
+	@RequestMapping("/login_list.do")
 	public String firstPage() {
 		return PATH + "login_form.jsp";
 	}
@@ -62,6 +62,6 @@ public class LoginController {
 		//user로 저장된 세션객체를 삭제
 		session.removeAttribute("user");
 		
-		return "redirect:list.do";
+		return "redirect:login_list.do";
 	}
 }

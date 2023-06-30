@@ -75,7 +75,7 @@
 				
 				alert( json[0].result );
 				
-				location.href="list.do";//전체 페이지 갱신
+				location.href="board_list.do";//전체 페이지 갱신
 			}
 			
 		}
