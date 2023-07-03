@@ -17,4 +17,8 @@
 		<constructor-arg ref="sqlSessionBean" />
 	</bean>
 	
+	<!-- 관리자 -->
+	<bean id="admin_daoBean" class="dao.AdminDAO">
+		<constructor-arg ref="sqlSessionBean" />
+	</bean>
 </beans>
