@@ -32,7 +32,7 @@
   			margin-top:250px;
 			font-size:36px;
 			color:#ff0;
-			background-image: url( "img/bg.jpg" );}
+			background-image: url( "/goodplace/resources/img/bg.jpg" );}
   </style>
  </head>
  <body>
@@ -43,9 +43,9 @@
 			</div>
 			<nav>
 				<ul class="clearfix">
-					<li><a href="mainpage.jsp"><img src="img/home.png" alt="홈 아이콘"></a></li>
-					<li><a href="login_form.jsp"><img src="img/count.png" alt="로그인 아이콘"></a></li>
-					<li><a href="#"><img src="img/share.png" alt="공유 아이콘"></a></li>
+					<li><a href="mainpage.jsp"><img src="/goodplace/resources/img/home.png" alt="홈 아이콘"></a></li>
+					<li><a href="login_form.jsp"><img src="/goodplace/resources/img/count.png" alt="로그인 아이콘"></a></li>
+					<li><a href="#"><img src="/goodplace/resources/img/share.png" alt="공유 아이콘"></a></li>
 				</ul>
 			</nav>
 		</header>
