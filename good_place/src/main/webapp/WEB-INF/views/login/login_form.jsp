@@ -78,6 +78,11 @@
 					<input type="reset" value="취소">
 				</td>
 			</tr>
+			<tr>
+				<th>회원가입</th>
+				<td><input type="button" value="회원가입" onclick="location.href='signup_insert_form.do'">></td>
+			</tr>
+			
 		</table>
 	</form>
 </body>

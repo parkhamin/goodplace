@@ -1,7 +1,7 @@
 package vo;
 
 public class SignupVO {
-	private int idx;
+	private int idx, userpower;
 	private String id, pwd, name, gender, email, birth;
 	public int getIdx() {
 		return idx;
@@ -44,6 +44,12 @@ public class SignupVO {
 	}
 	public void setBirth(String birth) {
 		this.birth = birth;
+	}
+	public int getUserpower() {
+		return userpower;
+	}
+	public void setUserpower(int userpower) {
+		this.userpower = userpower;
 	}
 	
 }

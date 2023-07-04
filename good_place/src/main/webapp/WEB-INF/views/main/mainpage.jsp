@@ -44,15 +44,16 @@
 			</div>
 			<nav>
 				<ul class="clearfix">
-					<li><a href="#"><img src="/goodplace/src/main/webapp/resources/img/share_white.png" alt="공유 아이콘"></a></li>
-					<li><a href="login_form.jsp"><img src="/goodplace/src/main/webapp/resources/img/account_white.png" alt="로그인 아이콘"></a></li>
-					<li><a href="mainpage.jsp"><img src="/goodplace/src/main/webapp/resources/img/home_white.png" alt="홈 아이콘"></a></li>
+					<li><a href="#" onclick="location.href = 'admin_list.do'"><img src="/goodplace/src/main/webapp/resources/img/admin_white.png" alt="관리자 아이콘"></a></li>
+					<li><a href="#" onclick="location.href = 'map.do'"><img src="/goodplace/src/main/webapp/resources/img/share_white.png" alt="공유 아이콘"></a></li>
+					<li><a href="#" onclick="location.href = 'login_list.do'"><img src="/goodplace/src/main/webapp/resources/img/account_white.png" alt="로그인 아이콘"></a></li>
+					<li><a href="#" onclick="location.href = 'main.do'"><img src="/goodplace/src/main/webapp/resources/img/home_white.png" alt="홈 아이콘"></a></li>
 				</ul>
 			</nav>
 		</header>
 	</div>
 	<section>
-		<div class="content">START!!!</div>
+		<div class="content"><a href="#" onclick="location.href = 'map.do'">START!!!</a></div>
 	</section>
 	<footer></footer>		
 </body>
