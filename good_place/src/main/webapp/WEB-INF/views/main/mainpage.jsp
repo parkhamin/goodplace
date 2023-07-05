@@ -35,9 +35,43 @@
 			font-size:36px;
 			color:#ff0;}
   </style>
+  
+  <style>
+    *{cursor: none;}
+        
+    .rounded{
+        
+        width: 38px;
+        height: 36px;
+        border-radius: 50%;
+        margin-top: 2px;
+        margin-left: -15px;
+        background-image: url(Mouse2.gif);
+    }
+ </style>
+ 
  </head>
  <body>
   	<div class="header">
+  	
+  	<script>
+
+        function copy_clip(){
+            window.navigator.clipboard.writeText("http://127.0.0.1:5500/Untitled-2.html").then(()=>{
+                alert("복사 완료!!!");
+            });
+        }
+
+        const cursorRounded = document.querySelector('.rounded');
+        const moveCursor = (e) => {
+        const mouseY = e.clientY;
+        const mouseX = e.clientX;
+        cursorRounded.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+        }
+        window.addEventListener('mousemove', moveCursor);
+
+    </script>
+  	
 		<header class="clearfix">
 			<div class="icon">
 				<h1><a href="#">Good place</a></h1>
@@ -45,7 +79,7 @@
 			<nav>
 				<ul class="clearfix">
 					<li><a href="#" onclick="location.href = 'admin_list.do'"><img src="/goodplace/src/main/webapp/resources/img/admin_white.png" alt="관리자 아이콘"></a></li>
-					<li><a href="#" onclick="location.href = 'map.do'"><img src="/goodplace/src/main/webapp/resources/img/share_white.png" alt="공유 아이콘"></a></li>
+					<li><img src="/goodplace/src/main/webapp/resources/img/share_white.png" onclick="copy_clip()" alt="공유 아이콘"></li>
 					<li><a href="#" onclick="location.href = 'login_list.do'"><img src="/goodplace/src/main/webapp/resources/img/account_white.png" alt="로그인 아이콘"></a></li>
 					<li><a href="#" onclick="location.href = 'main.do'"><img src="/goodplace/src/main/webapp/resources/img/home_white.png" alt="홈 아이콘"></a></li>
 				</ul>
@@ -55,6 +89,14 @@
 	<section>
 		<div class="content"><a href="#" onclick="location.href = 'map.do'">START!!!</a></div>
 	</section>
-	<footer></footer>		
+	<footer></footer>
+	
+	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+        	
 </body>
 </html>
