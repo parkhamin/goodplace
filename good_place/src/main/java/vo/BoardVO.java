@@ -4,9 +4,17 @@ import org.springframework.web.multipart.MultipartFile;
 
 public class BoardVO {
 	private int idx;
-	private String title, content, filename, location, pwd, ip, regdate;
+	private String title, content, filename, location, pwd, ip, regdate, pname;
 	
 	MultipartFile photo;
+
+	public String getPname() {
+		return pname;
+	}
+
+	public void setPname(String pname) {
+		this.pname = pname;
+	}
 
 	public int getIdx() {
 		return idx;

@@ -9,7 +9,6 @@
 </head>
 <head>
 
-<link href="body.css" rel="stylesheet">
 <style>
 
 .rounded {
@@ -24,8 +23,7 @@
 
 <style>
 @import
-	url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap')
-	;
+	url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 body {
 	background: #fff;
@@ -94,15 +92,16 @@ nav li {
 
 	<script>
 	
-    const cursorRounded = document.querySelector('.rounded');
-    const moveCursor = (e) => {
-    const mouseY = e.clientY;
-    const mouseX = e.clientX;
-    cursorRounded.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-    }
-    window.addEventListener('mousemove', moveCursor);
+	    const cursorRounded = document.querySelector('.rounded');
+	    const moveCursor = (e) => {
+	    	
+		    const mouseY = e.clientY;
+		    const mouseX = e.clientX;
+		    cursorRounded.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+	   	 	console.log('${mouseX}px');
+	    }
+	    window.addEventListener('mousemove', moveCursor);
 
-	
 	</script>
 
 	<div class="header">
@@ -115,7 +114,7 @@ nav li {
             });
         }
 
-    </script>
+    	</script>
 
 		<header class="clearfix">
 			<div class="icon">
@@ -154,11 +153,13 @@ nav li {
 			</nav>
 		</header>
 	</div>
+	
 	<section>
 		<div class="content">
 			<a href="#" onclick="location.href = 'map.do'">START!!!</a>
 		</div>
 	</section>
+	
 	<footer></footer>
 
 	<script
@@ -169,6 +170,5 @@ nav li {
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
 		integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
 		crossorigin="anonymous"></script>
-
 </body>
 </html>

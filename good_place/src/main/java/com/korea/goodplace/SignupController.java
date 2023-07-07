@@ -44,8 +44,6 @@ public class SignupController {
 			
 			return result;//result값을 가지고 콜백 메서드로 복귀
 		}
-		
-	
 }
 
 

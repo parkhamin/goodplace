@@ -40,11 +40,16 @@
 	     enctype이 반드시 지정되어 있어야 한다 -->
 	<form method="post" enctype="multipart/form-data">
 		<table border="1" align="center">
-			<caption>::: 새 글 작성 :::</caption>
+			<caption>::: 리뷰 작성 :::</caption>
 			
 			<tr>
 				<th>작성자</th>
 				<td><input name="name"></td>
+			</tr>
+			
+			<tr>
+				<th>장소</th>
+				<td><input name="pname" value="${ pname }"></td>
 			</tr>
 			
 			<tr>
@@ -77,6 +82,7 @@
 	</form>
 </body>
 </html>
+
 
 
 

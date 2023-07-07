@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
-	<script src="/ajax/resources/js/httpRequest.js"></script>
+	<script src="/goodplace/resources/js/httpRequest.js"></script>
 	<!-- <script src="${pageContext.request.contextPath}/resources/js/httpRequest.js"></script> -->
 	
 	<script>
@@ -55,8 +55,9 @@
 			<th>비밀번호</th>
 			<th>이름</th>
 			<th>성별</th>
-			<th colspan="2">이메일</th>
-			<th colspan="2">생일</th>
+			<th>이메일</th>
+			<th>생일</th>
+			<th>추방</th>
 		</tr>
 		
 		<c:forEach var="vo" items="${ list }">
