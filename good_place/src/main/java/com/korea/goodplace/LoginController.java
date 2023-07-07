@@ -21,7 +21,7 @@ public class LoginController {
 	public LoginController(LoginDAO login_dao) {
 		this.login_dao = login_dao;
 	}
-
+	
 	@RequestMapping("/login_list.do")
 	public String firstPage() {
 		return PATH + "login_form.jsp";
@@ -55,9 +55,9 @@ public class LoginController {
 		return "[{'res':'clear'}]";// 로그인 성공
 	}
 
-	// 로그인 실패했을때 돌아올 경로
-	@RequestMapping("/clear.do")
-	public String clear() {
+	// 첫 실행 및 로그인 실패했을때 메인 페이지로 돌아올 경로
+	@RequestMapping(value = { "/", "/main.do"} )
+	public String mainpage() {
 		return "/WEB-INF/views/main/" + "mainpage.jsp";
 	}
 
@@ -68,7 +68,8 @@ public class LoginController {
 
 		// user로 저장된 세션객체를 삭제
 		session.removeAttribute("user");
-
+		session.removeAttribute("admin");
+		
 		return "redirect:login_list.do";
 	}
 }

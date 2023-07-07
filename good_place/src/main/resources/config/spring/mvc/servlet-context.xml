@@ -37,8 +37,8 @@
 	
 	<beans:bean class="com.korea.goodplace.AdminController">
 		<beans:constructor-arg ref="admin_daoBean"/>
-	</beans:bean>      
-	 
+	</beans:bean>
+	  
 </beans:beans>
 
 

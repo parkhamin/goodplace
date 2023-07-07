@@ -17,6 +17,7 @@
 		<mapper resource="config/mybatis/mapper/signup.xml" />
 		<mapper resource="config/mybatis/mapper/board.xml" />
 		<mapper resource="config/mybatis/mapper/login.xml" />
+		<mapper resource="config/mybatis/mapper/admin.xml" />
 	</mappers>
 </configuration>
 

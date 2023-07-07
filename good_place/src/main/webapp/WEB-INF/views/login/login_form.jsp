@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 	
 <!-- <script src="${pageContext.request.contextPath}/resources/js/httpRequest.js"></script> -->
- 	<script src="/session/resources/js/httpRequest.js"></script> 
+ 	<script src="/goodplace/resources/js/httpRequest.js"></script> 
 	<script>
 		function send(f){
 			let id = f.id.value;
@@ -23,15 +23,13 @@
 				alert('비밀번호를 입력하세요')
 				return;
 			}
-			
-			f.action = "insert.do";
-			f.submit();//전송
-
+	
 			let url = "login.do";
 			let param = "id=" +f.id.value+"&pwd="+encodeURIComponent(f.pwd.value);
-			
+			//system.out.println("hm");
 			//login.do?id=aaa&pwd=1111
 			sendRequest(url, param, resFn, "post");
+			alert("로그인에 성공하셨습니다");
 		}
 		
 		function resFn(){
@@ -50,7 +48,7 @@
 					alert("비밀번호가 일치하지 않습니다");
 					
 				}else{
-					location.href="clear.do";
+					location.href="main.do";
 				}
 			}
 		}
@@ -75,12 +73,12 @@
 			<tr>
 				<td colspan="2" align="center">
 					<input type="button" value="로그인" onclick="send(this.form)">
-					<input type="reset" value="취소">
+					<input type="reset" value="취소" onclick="location.href='main.do'">
 				</td>
 			</tr>
 			<tr>
 				<th>회원가입</th>
-				<td><input type="button" value="회원가입" onclick="location.href='signup_insert_form.do'">></td>
+				<td><input type="button" value="회원가입" onclick="location.href='signup_insert_form.do'"></td>
 			</tr>
 			
 		</table>

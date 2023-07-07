@@ -22,7 +22,7 @@ public class AdminController {
 	}
 	
 	// 회원 목록 조회
-	@RequestMapping(value={"/", "/admin_list.do"})
+	@RequestMapping("/admin_list.do")
 	public String selectList(Model model) {
 		List<SignupVO> list = admin_dao.selectAll();
 		

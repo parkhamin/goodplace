@@ -48,7 +48,7 @@
 			//check_id.do?id=aaa
 			sendRequest(url, param, resultFunc, "GET");
 		}//check_id()
-		
+
 		//Ajax작업을 마치고 돌아올 콜백 메서드
 		function resultFunc(){
 			
