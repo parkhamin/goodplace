@@ -5,6 +5,21 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+
+<style>
+     *{
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-size: 30px;
+        color: yellow;
+        background: url("/goodplace/resources/img/bg.jpg");
+    }
+
+</style>
+
    <!-- 아이디 중복체크를 위한 Ajax사용을 위해 js를 참조 -->
    <!-- <script src="/ajax/resources/js/httpRequest.js"></script> -->
    <script src="${pageContext.request.contextPath}/resources/js/httpRequest.js"></script>

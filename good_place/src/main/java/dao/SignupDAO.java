@@ -5,7 +5,8 @@ import org.apache.ibatis.session.SqlSession;
 import vo.SignupVO;
 
 public class SignupDAO {
-	SqlSession sqlSession;
+	static SqlSession sqlSession;
+	
 	public SignupDAO(SqlSession sqlSession) {
 		this.sqlSession = sqlSession;
 	}
@@ -23,4 +24,5 @@ public class SignupDAO {
 			SignupVO vo = sqlSession.selectOne("s.checkid", id);
 			return vo;
 		}
+		
 }

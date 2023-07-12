@@ -10,18 +10,6 @@
 <head>
 
 <style>
-
-.rounded {
-	width: 38px;
-	height: 36px;
-	border-radius: 50%;
-	margin-top: 2px;
-	margin-left: -15px;
-	background-image: url("/goodplace/resources/img/star.gif");
-}
-</style>
-
-<style>
 @import
 	url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
@@ -52,11 +40,12 @@ img {
 }
 
 a {
+  	color: white;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #000;
+	color: yellow;
 	text-decoration: underline;
 }
 
@@ -69,6 +58,7 @@ a:hover {
 nav li {
 	float: right;
 	z-index: 1;
+	margin: 0 15px;
 }
 
 .icon {
@@ -87,23 +77,6 @@ nav li {
 
 <body>
 
-
-	<div id="cursor_div" class="cursor rounded"></div>
-
-	<script>
-	
-	    const cursorRounded = document.querySelector('.rounded');
-	    const moveCursor = (e) => {
-	    	
-		    const mouseY = e.clientY;
-		    const mouseX = e.clientX;
-		    cursorRounded.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-	   	 	console.log('${mouseX}px');
-	    }
-	    window.addEventListener('mousemove', moveCursor);
-
-	</script>
-
 	<div class="header">
 
 		<script>
@@ -119,7 +92,7 @@ nav li {
 		<header class="clearfix">
 			<div class="icon">
 				<h1>
-					<a href="#">Good place</a>
+					<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;Good place</a>
 				</h1>
 			</div>
 			<nav>
@@ -127,7 +100,7 @@ nav li {
 					<c:if test="${ not empty sessionScope.admin }">
 						<li><a href="#" onclick="location.href = 'admin_list.do'">
 								<img src="/goodplace/resources/img/admin_white.png"
-								alt="관리자 아이콘">
+								alt="관리자 아이콘">관리자
 						</a></li>
 					</c:if>
 					<li><img src="/goodplace/resources/img/share_white.png"
@@ -137,17 +110,17 @@ nav li {
 							test="${ empty sessionScope.user and empty sessionScope.admin }">
 							<li><a href="#" onclick="location.href = 'login_list.do'">
 									<img src="/goodplace/resources/img/account_white.png"
-									alt="로그인 아이콘">
+									alt="로그인 아이콘">로그인
 							</a></li>
 						</c:when>
 						<c:otherwise>
-							<li><a href="#" onclick="location.href = 'logout.do'"> <img
-									src="/goodplace/resources/img/logout_white.png" alt="로그아웃 아이콘">
+							<li><a href="#" onclick="location.href = 'logout.do'"><img
+									src="/goodplace/resources/img/logout_white.png" alt="로그아웃 아이콘">로그아웃
 							</a></li>
 						</c:otherwise>
 					</c:choose>
 					<li><a href="#" onclick="location.href = 'main.do'"> <img
-							src="/goodplace/resources/img/home_white.png" alt="홈 아이콘">
+							src="/goodplace/resources/img/home_white.png" alt="홈 아이콘">홈
 					</a></li>
 				</ul>
 			</nav>
@@ -162,13 +135,5 @@ nav li {
 	
 	<footer></footer>
 
-	<script
-		src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-		crossorigin="anonymous"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-		integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-		crossorigin="anonymous"></script>
 </body>
 </html>

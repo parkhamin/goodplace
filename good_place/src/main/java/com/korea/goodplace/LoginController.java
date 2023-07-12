@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -18,9 +19,8 @@ import vo.SignupVO;
 @Controller
 public class LoginController {
 	public static final String PATH = "/WEB-INF/views/login/";
-
+	
 	LoginDAO login_dao;
-
 	public LoginController(LoginDAO login_dao) {
 		this.login_dao = login_dao;
 	}
@@ -85,4 +85,6 @@ public class LoginController {
 		 
 		return "redirect:login_list.do";
 	}
+	
+
 }
